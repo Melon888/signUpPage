@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #fcd862, #fda086);
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: beige;
+}
+.container {
+  padding: 20px;
+  /* align-items: center;
+  justify-content: center;
+  position: relative;*/
+}
+.form-control {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+.form-control i {
+  position: absolute;
+  visibility: hidden;
+}
+.form-control small {
+  color: #e74c3c;
+
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+form {
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #fda086;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+}
+
+form button:hover {
+  background: #fda086;
+  color: white;
+}
